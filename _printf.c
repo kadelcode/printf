@@ -50,7 +50,7 @@ int _printf(const char *format, ...)
 	va_end(list);
 
 	return (printed_chars);
-
+}
 /**
  * print_buffer - Prints the contents of the buffer if it exist
  * @buffer: Array of chars
@@ -62,5 +62,4 @@ void print_buffer(char buffer[], int *buff_ind)
 		write(1, &buffer[0], *buff_ind);
 
 	*buff_ind = 0;
-}
 }
